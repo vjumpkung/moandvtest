@@ -1,7 +1,7 @@
 import {Nav,Navbar,Container,Row,Col} from 'react-bootstrap';
 import Link from 'next/link'
 import Head from 'next/head'
-const Title = "Mo & V รับผลิตเสื้อยืด และกระเป๋าผ้าทุกชนิด พร้อมสกรีนทุกแบบไม่จำกัดสี ไม่มีขั้นต่ำ "
+const Title = "Mo & V รับผลิตและสกรีนเสื้อยืด และกระเป๋าผ้าทุกชนิด พร้อมสกรีนทุกแบบไม่จำกัดสี ไม่มีขั้นต่ำ "
 const Header = () => (
   <>
   <Head>
@@ -58,9 +58,8 @@ const Header = () => (
   </>
 
 )
-export async function getStaticProps() {
-  return {
-    props: {}, // will be passed to the page component as props
-  }
+Header.getInitialProps = async () => {
+
+  return { }
 }
 export default Header

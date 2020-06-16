@@ -1,4 +1,4 @@
-import {Container,Row,Col,Image,Button} from 'react-bootstrap'
+import {Container,Row,Image,Button} from 'react-bootstrap'
 import Head from 'next/head'
 import Header from '../components/header'
 import Footer from '../components/footer'
