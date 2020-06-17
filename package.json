@@ -17,5 +17,8 @@
     "react-dom": "16.13.1",
     "sass": "^1.26.8",
     "sitemap": "^6.1.5"
+  },
+  "devDependencies": {
+    "typescript": "^3.9.5"
   }
 }
