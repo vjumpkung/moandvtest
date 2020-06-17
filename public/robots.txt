@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /about
+Allow: /*
+Disallow: /404
+
+Sitemap: https://moandv.com/sitemap.xml 
