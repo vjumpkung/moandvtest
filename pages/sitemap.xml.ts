@@ -1,5 +1,4 @@
 import { NextPageContext } from "next";
-import React from 'react';
 
 const blogPostsXml = () => {
   let postsXml = "";

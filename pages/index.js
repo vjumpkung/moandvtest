@@ -9,7 +9,7 @@ const index =()=> (
         <meta name="robots" content="index,follow,archive" />
       </Head>
       <Header/>
-         <Carousel interval="3000" >
+         <Carousel interval="3000">
           <Carousel.Item>
             <Image fluid src="/pic/pic1.png" alt="แบบเสื้อ 1-4"></Image>
           </Carousel.Item>
@@ -21,7 +21,7 @@ const index =()=> (
           </Carousel.Item>
         </Carousel>       
         <Container>
-            <Row>
+                <Row>
                      <Col>
                             <h1 className="center resfontsize">รับผลิต สกรีนเสื้อยืด และกระเป๋าผ้าทุกชนิด บริการสกรีนเสื้อ <br></br>ระบบ DTG เครื่องพิมพ์คุณภาพมาตรฐานญี่ปุ่น <br></br> พร้อมสกรีนทุกแบบไม่จำกัดสี</h1>
                             <a className="centerimg spaceontop" alt=" ">
@@ -44,7 +44,7 @@ const index =()=> (
                  </Row>  
             <Row>
             <Col>
-                <a className="centerimg spaceonbottom spaceontop" alt=" "><Image fluid src="/pic/buy.png" alt="ผลิตเสื้อยืด"></Image></a>
+                <a className="centerimg spaceonbottom spaceontop" alt=" "><Image fluid width="950" src="/pic/buy.png" alt="ผลิตเสื้อยืด"></Image></a>
                 <a className="centerimg spaceonbottom spaceontop" alt=" "><Image fluid width="950" src="/pic/sizeadult.png" alt="ราคาเสื้อยืดผู้ใหญ่"></Image></a>          
                 <a className="centerimg spaceonbottom spaceontop" alt=" "><Image fluid width="950" src="/pic/sizekids.png" alt="ราคาเสื้อยืดเด็ก"></Image></a>  
                 <a className="centerimg spaceonbottom spaceontop" alt=" "><Image fluid width="950" src="/pic/send.png" alt="ส่งด่วน"></Image></a>
@@ -84,6 +84,7 @@ const index =()=> (
                     font-size: 15px;
                   }
               }
+
       `}</style>
 
     </>

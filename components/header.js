@@ -16,23 +16,22 @@ const Header = () => (
     <meta property="og:site_name" content="ร้าน Mo & V รับผลิตเสื้อยืด"></meta>
     <meta property="og:description" content="รับผลิต สกรีนเสื้อยืด และกระเป๋าผ้าทุกชนิด พร้อมสกรีนทุกแบบไม่จำกัดสี ไม่มีขั้นต่ำด้วยระบบ DTG จาก Brother GTX ที่ ลาดพร้าว 130"></meta>
     <meta property="og:image" content="https://moandv.com/pic/about.png"></meta>
-    
   </Head>
-<Container fluid className="bg-white sticky-top ">
+<Container fluid className="sticky-top site-header">
   <Row>
-    <Col >
+    <Col>
       <Container>
         <Row>
-          <Col >
-            <Navbar sticky="top" collapseOnSelect expand="lg">
+          <Col>
+            <Navbar sticky="top" collapseOnSelect expand="md">
             <Navbar.Brand href="/"><img src="/pic/logo.png" height="80" alt="ร้าน Mo & V"></img></Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
             </Nav>
             <Nav>
-            <Nav.Link><Link href="/"><h4 className="text-pink">หน้าแรก</h4></Link></Nav.Link>
-            <Nav.Link><Link href="about"><h4 className="text-grey">เกี่ยวกับ</h4></Link></Nav.Link>
+            <Nav.Link><Link href="/"><h4>หน้าแรก</h4></Link></Nav.Link>
+            <Nav.Link><Link href="about"><h4>เกี่ยวกับ</h4></Link></Nav.Link>
             </Nav>
             </Navbar.Collapse>
             </Navbar>
@@ -54,7 +53,17 @@ const Header = () => (
                 .text-grey{
                   color: rgb(150, 150, 150)
                 }
+
       `}</style>
+  <style type="text/css">
+                  {`
+                .site-header {
+                  background-color: rgba(255, 255, 255, .85);
+                  -webkit-backdrop-filter: saturate(180%) blur(20px);
+                  backdrop-filter: saturate(180%) blur(20px)
+              }
+          `}
+   </style>
   </>
 
 )
