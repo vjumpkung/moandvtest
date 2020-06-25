@@ -16,7 +16,7 @@ const Footer = () => (
             </Row>
             <Row>
                 <Col className="center">
-                    <Image src="/pic/nextjs.svg" height="150" className="spaceontop spaceonbottom center"></Image>
+                    <Image src="/pic/nextjs.svg" height="150" className="spaceontop spaceonbottom center" alt="nextjs"></Image>
                 </Col>
             </Row>
         
