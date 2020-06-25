@@ -20,7 +20,7 @@ const index =()=> (
             <Image fluid src="/pic/pic3.png" alt="แบบเสื้อ 9-12"></Image>
           </Carousel.Item>
         </Carousel>       
-        <Container>
+        <Container fluid="xl">
                 <Row>
                      <Col>
                             <h1 className="center resfontsize">รับผลิต สกรีนเสื้อยืด และกระเป๋าผ้าทุกชนิด บริการสกรีนเสื้อ <br></br>ระบบ DTG เครื่องพิมพ์คุณภาพมาตรฐานญี่ปุ่น <br></br> พร้อมสกรีนทุกแบบไม่จำกัดสี</h1>
@@ -89,6 +89,7 @@ const index =()=> (
 
     </>
 )
+
 index.getInitialProps = async () => {
 
   return { }

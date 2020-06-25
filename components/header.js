@@ -1,6 +1,7 @@
 import {Nav,Navbar,Container,Row,Col} from 'react-bootstrap';
 import Link from 'next/link'
 import Head from 'next/head'
+import Headroom from 'react-headroom'
 const Title = "Mo & V รับผลิตและสกรีนเสื้อยืด และกระเป๋าผ้าทุกชนิด พร้อมสกรีนทุกแบบไม่จำกัดสี ไม่มีขั้นต่ำ "
 const Header = () => (
   <>
@@ -17,13 +18,14 @@ const Header = () => (
     <meta property="og:description" content="รับผลิต สกรีนเสื้อยืด และกระเป๋าผ้าทุกชนิด พร้อมสกรีนทุกแบบไม่จำกัดสี ไม่มีขั้นต่ำด้วยระบบ DTG จาก Brother GTX ที่ ลาดพร้าว 130"></meta>
     <meta property="og:image" content="https://moandv.com/pic/about.png"></meta>
   </Head>
-<Container fluid className="sticky-top site-header">
+<Headroom>
+<Container fluid id="navbar">
   <Row>
     <Col>
       <Container>
         <Row>
           <Col>
-            <Navbar sticky="top" collapseOnSelect expand="md">
+            <Navbar collapseOnSelect expand="md">
             <Navbar.Brand href="/"><img src="/pic/logo.png" height="80" alt="ร้าน Mo & V"></img></Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
@@ -41,23 +43,16 @@ const Header = () => (
     </Col>
   </Row>
 </Container>
-
+</Headroom>
   <style jsx>{`
                 .center {
                   line-height: 60px;
                   text-align: center;
                 }
-                .text-pink{
-                  color: rgb(235, 133, 213)
-                }
-                .text-grey{
-                  color: rgb(150, 150, 150)
-                }
-
       `}</style>
   <style type="text/css">
                   {`
-                .site-header {
+                #navbar {
                   background-color: rgba(255, 255, 255, .85);
                   -webkit-backdrop-filter: saturate(180%) blur(20px);
                   backdrop-filter: saturate(180%) blur(20px)
@@ -68,7 +63,6 @@ const Header = () => (
 
 )
 Header.getInitialProps = async () => {
-
   return { }
 }
 export default Header
