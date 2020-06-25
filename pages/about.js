@@ -58,7 +58,7 @@ const About=()=>(
                      </Col>
                  </Row>
              </Container>
-             <Footer/>
+             <center><Footer/></center>
              <style jsx>{`
                 .center {
                   line-height: 60px;

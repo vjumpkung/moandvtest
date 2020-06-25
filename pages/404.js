@@ -14,7 +14,7 @@ const notfound = () =>
                     <Row>
                         <div class="col md=7 my-auto"> 
                             <div>
-                                <Image src="/pic/404.svg" fluid></Image>                       
+                                <Image src="/pic/404.svg" fluid className="floating"></Image>                       
                             </div>
                         </div>
                         <div class="col md=4 my-auto"> 
@@ -28,7 +28,7 @@ const notfound = () =>
                     </Row>
                 </Container>
             </div>
-        <Footer/>
+        <a className="center"><Footer/></a>
         <style jsx>{`
                 .center {
                     line-height: 60px;
@@ -89,6 +89,24 @@ const notfound = () =>
                 }
               }
       `}</style>
+          <style type="text/css">
+                  {`
+                    .floating {  
+                        animation-name: floating;
+                        animation-duration: 3s;
+                        animation-iteration-count: infinite;
+                        animation-timing-function: ease-in-out;
+                        margin-left: 30px;
+                        margin-top: 5px;
+                    }
+
+                    @keyframes floating {
+                        from { transform: translate(0,  0px); }
+                        65%  { transform: translate(0, 15px); }
+                        to   { transform: translate(0, -0px); }    
+                    }
+          `}
+          </style>
     </>
 )
 export async function getStaticProps() {

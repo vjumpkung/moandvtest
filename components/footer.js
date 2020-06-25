@@ -1,7 +1,7 @@
-import {Container,Row,Col} from 'react-bootstrap'
+import {Container,Row,Col,Image} from 'react-bootstrap'
 
 const Footer = () => (
-    <div>
+    <div className="align-content-center">
     <Container fluid className="center bg-grey">
             <Row>
                 <Col className="center">
@@ -11,8 +11,12 @@ const Footer = () => (
             </Row>
             <Row>
                 <Col className="center">
-                    <h5 className="text-black center">© ร้าน Mo & V</h5>
-                    <h6 className="text-black center">powered by &nbsp; <img src="/pic/nextjs.svg" height="60" alt="โลโก้ next.js"></img> </h6>
+                    <h5 className="text-black center">© ร้าน Mo & V</h5>      
+                </Col>
+            </Row>
+            <Row>
+                <Col className="center">
+                    <Image src="/pic/nextjs.svg" height="150" className="spaceontop spaceonbottom center"></Image>
                 </Col>
             </Row>
         
@@ -42,15 +46,22 @@ const Footer = () => (
                   
                   @media screen and (max-width: 600px) {
                     h6.resfontsize {
-                      font-size: 11px;
+                      font-size: 12px;
                     }
                 }
 
         `}</style>
+
           <style type="text/css">
                   {`
                      .bg-grey {
                         background-color: rgb(230, 230, 230);
+                      }
+                      .spaceonbottom {
+                        margin-bottom: 15px;
+                      }
+                      .spaceontop {
+                        margin-top: 15px;
                       }
           `}
           </style>
