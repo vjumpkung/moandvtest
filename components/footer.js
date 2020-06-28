@@ -19,52 +19,6 @@ const Footer = () => (
                     <Image src="/pic/nextjs.svg" height="150" className="spaceontop spaceonbottom center" alt="nextjs"></Image>
                 </Col>
             </Row>
-        
-        <style jsx>{`
-                .center {
-                  line-height: 60px;
-                  text-align: center;
-                }
-                .text-pink{
-                  color: rgb(235, 133, 213)
-                }
-                .text-black{
-                  color: rgb(0, 0, 0)
-                }
-                .centerimg{
-                  text-align: center;
-                  display: block;
-                }
-                .spaceonbottom {
-                  margin-bottom: 15px;
-                }
-                .spaceontop {
-                  margin-top: 15px;
-                }
-                @media screen and (min-width: 601px) {
-                  }
-                  
-                  @media screen and (max-width: 600px) {
-                    h6.resfontsize {
-                      font-size: 12px;
-                    }
-                }
-
-        `}</style>
-
-          <style type="text/css">
-                  {`
-                     .bg-grey {
-                        background-color: rgb(230, 230, 230);
-                      }
-                      .spaceonbottom {
-                        margin-bottom: 15px;
-                      }
-                      .spaceontop {
-                        margin-top: 15px;
-                      }
-          `}
-          </style>
     </Container>
     </div>
 )

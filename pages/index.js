@@ -9,7 +9,7 @@ const index =()=> (
         <meta name="robots" content="index,follow,archive" />
       </Head>
       <Header/>
-         <Carousel interval="3000">
+        <Carousel interval="3000">
           <Carousel.Item>
             <Image fluid src="/pic/pic1.png" alt="แบบเสื้อ 1-4"></Image>
           </Carousel.Item>
@@ -23,7 +23,7 @@ const index =()=> (
         <Container fluid="xl">
                 <Row>
                      <Col>
-                            <h1 className="center resfontsize">รับผลิต สกรีนเสื้อยืด และกระเป๋าผ้าทุกชนิด บริการสกรีนเสื้อ <br></br>ระบบ DTG เครื่องพิมพ์คุณภาพมาตรฐานญี่ปุ่น <br></br> พร้อมสกรีนทุกแบบไม่จำกัดสี</h1>
+                            <h2 className="center resfontsize">รับผลิต สกรีนเสื้อยืด และกระเป๋าผ้าทุกชนิด บริการสกรีนเสื้อ <br></br>ระบบ DTG เครื่องพิมพ์คุณภาพมาตรฐานญี่ปุ่น <br></br> พร้อมสกรีนทุกแบบไม่จำกัดสี</h2>
                             <a className="centerimg spaceontop" alt=" ">
                             <Image fluid src="/pic/about.png" alt="เกี่ยวกับร้าน"></Image>
                             </a>
@@ -52,40 +52,6 @@ const index =()=> (
           </Row>
         </Container> 
         <a className="center" alt=" "><Footer/></a>
-      <style jsx>{`
-                .center {
-                  line-height: 60px;
-                  text-align: center;
-                }
-                .text-pink{
-                  color: rgb(235, 133, 213)
-                }
-                .text-grey{
-                  color: rgb(150, 150, 150)
-                }
-                .centerimg{
-                  text-align: center;
-                  display: block;
-                }
-                .spaceonbottom {
-                  margin-bottom: 15px;
-                }
-                .spaceontop {
-                  margin-top: 15px;
-                }
-                
-                @media screen and (min-width: 601px) {
-                  h1.resfontsize {
-                    font-size: 32px;
-                  }
-                }     
-                @media screen and (max-width: 600px) {
-                  h1.resfontsize {
-                    font-size: 15px;
-                  }
-              }
-
-      `}</style>
 
     </>
 )

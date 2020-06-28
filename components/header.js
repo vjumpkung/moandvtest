@@ -44,21 +44,6 @@ const Header = () => (
         </Row>
       </Container>
     </Headroom>
-  <style jsx>{`
-                .center {
-                  line-height: 60px;
-                  text-align: center;
-                }
-      `}</style>
-  <style type="text/css">
-                  {`
-                #navbar {
-                  background-color: rgba(255, 255, 255, .85);
-                  -webkit-backdrop-filter: saturate(180%) blur(20px);
-                  backdrop-filter: saturate(180%) blur(20px)
-              }
-          `}
-   </style>
   </>
 
 )
