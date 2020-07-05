@@ -12,12 +12,11 @@ const sitemapXml = () => {
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
       <loc>https://moandv.com/</loc>
-      <lastmod>2020-06-11T06:10:41+00:00</lastmod>
       <priority>1.00</priority>
     </url>
     <url>
       <loc>https://moandv.com/about</loc>
-      <priority>0.5</priority>
+      <priority>0.8</priority>
     </url>
     ${postsXml}
   </urlset>`;
