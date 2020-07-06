@@ -5,9 +5,6 @@ import {Container,Row,Col,Image,Carousel} from 'react-bootstrap'
 
 const index =()=> (
     <>
-      <Head>
-        <meta name="robots" content="index,follow,archive" />
-      </Head>
       <Header/>
         <Carousel interval="3000">
           <Carousel.Item>

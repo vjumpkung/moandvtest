@@ -7,9 +7,6 @@ import Iframe from 'react-iframe'
 const About=()=>(
     
         <>
-            <Head>
-              <meta name="robots" content="noindex,nofollow,noarchive" />
-            </Head>
              <Header/>
              <br></br>
              <br></br>
