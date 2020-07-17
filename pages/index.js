@@ -99,7 +99,7 @@ const index = () => (
   </>
 );
 
-index.getInitialProps = async () => {
+index.getStaticProps = async () => {
   return {};
 };
 export default index;
