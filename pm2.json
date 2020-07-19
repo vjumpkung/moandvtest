@@ -4,8 +4,7 @@
             "name": "moandv.com",
             "script": "npm",
             "args" : "start",
-            "instances": "max",
-            "exec_mode": "cluster"
+            "exec_mode": "fork"
         }
     ]
   }
