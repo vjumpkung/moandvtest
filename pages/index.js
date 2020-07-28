@@ -11,7 +11,7 @@ const index = () => (
           fluid
           src="/pic/pic1.png"
           alt="แบบเสื้อ 1-4"
-          loading="lazy"
+          loading="eager"
         ></Image>
       </Carousel.Item>
       <Carousel.Item>
@@ -51,7 +51,9 @@ const index = () => (
               fluid
               src="/pic/about.png"
               alt="เกี่ยวกับร้าน"
-              loading="lazy"
+              loading="eager"
+              width="950"
+              height="491"
             ></Image>
           </a>
         </Col>
@@ -71,6 +73,8 @@ const index = () => (
                 src="/pic/facebook.png"
                 alt="เกี่ยวกับร้าน"
                 loading="lazy"
+                width="475"
+                height="121"
               ></Image>
             </a>
             <a
@@ -84,6 +88,8 @@ const index = () => (
                 src="/pic/line.png"
                 alt="เกี่ยวกับร้าน"
                 loading="lazy"
+                width="475"
+                height="121"
               ></Image>
             </a>
           </a>
@@ -95,7 +101,7 @@ const index = () => (
           <a className="centerimg spaceonbottom spaceontop" alt=" ">
             <Image
               fluid
-              width="950"
+              width="950" height="724"
               src="/pic/buy.png"
               alt="ผลิตเสื้อยืด"
               loading="lazy"
@@ -104,7 +110,7 @@ const index = () => (
           <a className="centerimg spaceonbottom spaceontop" alt=" ">
             <Image
               fluid
-              width="950"
+              width="950" height="1572"
               src="/pic/sizeadult.png"
               alt="ราคาเสื้อยืดผู้ใหญ่"
               loading="lazy"
@@ -113,7 +119,7 @@ const index = () => (
           <a className="centerimg spaceonbottom spaceontop" alt=" ">
             <Image
               fluid
-              width="950"
+              width="950" height="1572"
               src="/pic/sizekids.png"
               alt="ราคาเสื้อยืดเด็ก"
               loading="lazy"
@@ -122,7 +128,7 @@ const index = () => (
           <a className="centerimg spaceonbottom spaceontop" alt=" ">
             <Image
               fluid
-              width="950"
+              width="950" height="534.56"
               src="/pic/send.png"
               alt="ส่งด่วน"
               loading="lazy"
@@ -137,9 +143,4 @@ const index = () => (
   </>
 );
 
-export async function getStaticProps(context) {
-  return {
-    props: {}, // will be passed to the page component as props
-  };
-}
 export default index;
