@@ -1,13 +1,5 @@
-import { NextPageContext } from "next";
-
-const blogPostsXml = () => {
-  let postsXml = "";
-  return {
-    postsXml
-  };
-};
 const sitemapXml = () => {
-  const {postsXml} = blogPostsXml();
+  const { postsXml } = blogPostsXml();
   return `<?xml version="1.0" encoding="UTF-8"?>
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
@@ -24,10 +16,9 @@ const sitemapXml = () => {
 
 const Sitemap = () => {};
 
-Sitemap.getInitialProps = async ({ res }: NextPageContext) => {
-  
+Sitemap.getInitialProps = async ({ res }) => {
   res.setHeader("Content-Type", "text/xml");
   res.write(sitemapXml());
   res.end();
 };
-export default Sitemap
+export default Sitemap;

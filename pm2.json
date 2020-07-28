@@ -2,8 +2,9 @@
     "apps": [
         {
             "name": "moandv.com",
-            "script": "npm",
+            "script": "yarn",
             "args" : "start",
+            "interpreter": "/bin/bash",
             "exec_mode": "fork"
         }
     ]

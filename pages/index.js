@@ -1,6 +1,5 @@
 import Header from "../components/header";
 import Footer from "../components/footer";
-import Head from "next/head";
 import { Container, Row, Col, Image, Carousel } from "react-bootstrap";
 
 const index = () => (
@@ -8,13 +7,28 @@ const index = () => (
     <Header />
     <Carousel interval="3000">
       <Carousel.Item>
-        <Image fluid src="/pic/pic1.png" alt="แบบเสื้อ 1-4"></Image>
+        <Image
+          fluid
+          src="/pic/pic1.png"
+          alt="แบบเสื้อ 1-4"
+          loading="lazy"
+        ></Image>
       </Carousel.Item>
       <Carousel.Item>
-        <Image fluid src="/pic/pic2.png" alt="แบบเสื้อ 5-8"></Image>
+        <Image
+          fluid
+          src="/pic/pic2.png"
+          alt="แบบเสื้อ 5-8"
+          loading="lazy"
+        ></Image>
       </Carousel.Item>
       <Carousel.Item>
-        <Image fluid src="/pic/pic3.png" alt="แบบเสื้อ 9-12"></Image>
+        <Image
+          fluid
+          src="/pic/pic3.png"
+          alt="แบบเสื้อ 9-12"
+          loading="lazy"
+        ></Image>
       </Carousel.Item>
     </Carousel>
     <Container fluid="xl">
@@ -33,7 +47,12 @@ const index = () => (
             พร้อมสกรีนทุกแบบไม่จำกัดสี
           </h2>
           <a className="centerimg spaceontop" alt=" ">
-            <Image fluid src="/pic/about.png" alt="เกี่ยวกับร้าน"></Image>
+            <Image
+              fluid
+              src="/pic/about.png"
+              alt="เกี่ยวกับร้าน"
+              loading="lazy"
+            ></Image>
           </a>
         </Col>
       </Row>
@@ -47,7 +66,12 @@ const index = () => (
               target="_blank"
               alt="Facebook Link"
             >
-              <Image fluid src="/pic/facebook.png" alt="เกี่ยวกับร้าน"></Image>
+              <Image
+                fluid
+                src="/pic/facebook.png"
+                alt="เกี่ยวกับร้าน"
+                loading="lazy"
+              ></Image>
             </a>
             <a
               className=""
@@ -55,7 +79,12 @@ const index = () => (
               target="_blank"
               alt="Line Link"
             >
-              <Image fluid src="/pic/line.png" alt="เกี่ยวกับร้าน"></Image>
+              <Image
+                fluid
+                src="/pic/line.png"
+                alt="เกี่ยวกับร้าน"
+                loading="lazy"
+              ></Image>
             </a>
           </a>
           <br></br>
@@ -69,6 +98,7 @@ const index = () => (
               width="950"
               src="/pic/buy.png"
               alt="ผลิตเสื้อยืด"
+              loading="lazy"
             ></Image>
           </a>
           <a className="centerimg spaceonbottom spaceontop" alt=" ">
@@ -77,6 +107,7 @@ const index = () => (
               width="950"
               src="/pic/sizeadult.png"
               alt="ราคาเสื้อยืดผู้ใหญ่"
+              loading="lazy"
             ></Image>
           </a>
           <a className="centerimg spaceonbottom spaceontop" alt=" ">
@@ -85,10 +116,17 @@ const index = () => (
               width="950"
               src="/pic/sizekids.png"
               alt="ราคาเสื้อยืดเด็ก"
+              loading="lazy"
             ></Image>
           </a>
           <a className="centerimg spaceonbottom spaceontop" alt=" ">
-            <Image fluid width="950" src="/pic/send.png" alt="ส่งด่วน"></Image>
+            <Image
+              fluid
+              width="950"
+              src="/pic/send.png"
+              alt="ส่งด่วน"
+              loading="lazy"
+            ></Image>
           </a>
         </Col>
       </Row>
@@ -102,6 +140,6 @@ const index = () => (
 export async function getStaticProps(context) {
   return {
     props: {}, // will be passed to the page component as props
-  }
+  };
 }
 export default index;
